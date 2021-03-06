@@ -1,0 +1,41 @@
+{
+  "database": {
+    "rules": "database.rules.json"
+  },
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "functions": {
+    "source": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**",
+      "components/**",
+      "pages/**",
+      "public/**",
+      "README.md",
+      "styles/**",
+      "state/**"
+    ]
+  },
+  "hosting": {
+    "public": "public/",
+    "site": "file-streaming",
+    "cleanUrls": true,
+    "rewrites": [
+      {
+        "source": "**/**",
+        "function": "next"
+      },
+      {
+        "source": "**",
+        "function": "next"
+      }
+    ]
+  },
+  "storage": {
+    "rules": "storage.rules"
+  }
+}

@@ -1,0 +1,34 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "allowSyntheticDefaultImports": true,
+        "allowJs": true,
+        "importHelpers": true,
+        "jsx": "react",
+        "strict": false,
+        "sourceMap": true,
+        "forceConsistentCasingInFileNames": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitReturns": true,
+        "noImplicitAny": true,
+        "noImplicitThis": false,
+        "noUnusedParameters": false,
+        "noUnusedLocals": false,
+        "esModuleInterop": true,
+        "typeRoots": ["node_modules/@types", "src/@types"],
+        "resolveJsonModule": true,
+        "strictNullChecks": true,
+        "pretty": true,
+        "outDir": "./dist",
+    },
+    "include": [
+        "src/app.ts",
+        "config/*.ts",
+        "models/*.ts",
+        "routings/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
