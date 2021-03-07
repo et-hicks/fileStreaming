@@ -21,6 +21,7 @@ const initPeer = (streamID: string): Peer => {
             { urls: 'stun:stun.ideasip.com?transport=tcp' },
             { urls: 'stun:stun.schlund.de?transport=tcp' },
             { urls: 'stun:stun.xten.com?transport=tcp' },
+            // Unproven stun URLS
             // {urls: 'stun:stun.nextcloud.com:443'},
             // {urls: 'stun:relay.webwormhole.io'},
             // {urls: 'stun:relay.webwormhole.io?transport=tcp'}, // I got no idea if appending transport=tcp is a good idea
